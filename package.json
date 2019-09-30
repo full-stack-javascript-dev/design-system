@@ -1,0 +1,19 @@
+{
+  "name": "fsjsd-design-system",
+  "version": "1.0.0",
+  "description": "Modern, clean component library for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsjsd/fsjsd-design-system.git"
+  },
+  "author": "Chris Webb, https://fsjs.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsjsd/fsjsd-design-system/issues"
+  },
+  "homepage": "https://github.com/fsjsd/fsjsd-design-system#readme"
+}
