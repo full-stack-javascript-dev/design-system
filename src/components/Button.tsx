@@ -27,7 +27,7 @@ const StyledButton = styled.button`
   }
 `;
 
-interface ButtonProps extends React.AllHTMLAttributes<any> {
+interface ButtonProps extends React.ButtonHTMLAttributes<any> {
   children?: any;
 }
 
@@ -35,7 +35,7 @@ export const Button: React.FC<ButtonProps> = ({ children, ...restProps }) => {
   return <StyledButton {...restProps}>{children}</StyledButton>;
 };
 
-interface ButtonGroupProps extends React.AllHTMLAttributes<any> {
+interface ButtonGroupProps extends React.BaseHTMLAttributes<any> {
   children: any;
 }
 
