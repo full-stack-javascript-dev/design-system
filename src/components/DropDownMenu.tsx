@@ -70,7 +70,7 @@ export const DropDownMenu: React.FC<DropDownMenuProps> = ({
   return (
     <div>
       <DropDownMenuAnchor
-        onselect="return false"
+        onSelect={() => false}
         onClick={(ev: any) => toggleChoices()}
       >
         {renderSelectedItem(selectedItem)}

@@ -15,7 +15,7 @@ const FormWrapperStyled = styled.div`
     `}
 `;
 
-interface FormWrapperProps extends React.AllHTMLAttributes<any> {
+interface FormWrapperProps extends React.HTMLAttributes<any> {
   children: any;
   overlay?: boolean;
   emphasis?: boolean;
@@ -28,7 +28,7 @@ export const FormWrapper: React.FC<FormWrapperProps> = ({
   return <FormWrapperStyled {...restProps}>{children}</FormWrapperStyled>;
 };
 
-interface FormControlProps extends React.AllHTMLAttributes<any> {
+interface FormControlProps extends React.HTMLAttributes<any> {
   children: any;
   noOffsetBottom?: boolean;
 }
@@ -51,7 +51,7 @@ export const FormControl: React.FC<FormControlProps> = ({
   return <FormControlStyled {...restProps}>{children}</FormControlStyled>;
 };
 
-interface FormLabelProps extends React.AllHTMLAttributes<any> {
+interface FormLabelProps extends React.HTMLAttributes<any> {
   children?: any;
 }
 
@@ -68,7 +68,7 @@ export const FormLabel: React.FC<FormLabelProps> = ({
   return <FormLabelStyled {...restProps}>{children}</FormLabelStyled>;
 };
 
-interface FormElementProps extends React.AllHTMLAttributes<any> {
+interface FormElementProps extends React.HTMLAttributes<any> {
   children?: any;
 }
 

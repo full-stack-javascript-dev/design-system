@@ -12,7 +12,7 @@ const ToggleOn = styled(FaCheckCircle)`
   font-size: 1.3rem;
   cursor: pointer;
 `;
-interface ToggleButtonProps extends React.AllHTMLAttributes<any> {
+interface ToggleButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   toggled: boolean;
   onClick: any;
 }

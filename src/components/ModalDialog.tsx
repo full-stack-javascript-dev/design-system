@@ -21,7 +21,7 @@ const ModalDialogWrapper = styled.div`
   padding: 1px;
 `;
 
-interface ModalHeaderProps extends React.AllHTMLAttributes<any> {
+interface ModalHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: any;
 }
 
@@ -39,7 +39,7 @@ export const ModalContent = styled.div`
   padding-bottom: 44px;
 `;
 
-interface ModalDialogProps extends React.AllHTMLAttributes<any> {
+interface ModalDialogProps extends React.HTMLAttributes<HTMLDivElement> {
   onBackgroundClick?: () => void;
   children?: any;
 }

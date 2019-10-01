@@ -36,23 +36,30 @@ const TextareaStyled = styled.textarea`
     border: solid 1px rgb(109, 183, 239);
   }
 
-  ${(props: React.AllHTMLAttributes<any>) =>
+  ${(props: HtmlInputProps) =>
     props.width &&
     css`
       width: ${props.width};
     `}
 
-  ${(props: React.AllHTMLAttributes<any>) =>
+  ${(props: HtmlInputProps) =>
     props.height &&
     css`
       height: ${props.height};
     `}
 `;
 
-export const Input: React.FC<React.AllHTMLAttributes<any>> = props => {
+interface HtmlInputProps
+  extends React.InputHTMLAttributes<any>,
+    React.TextareaHTMLAttributes<any> {
+  width?: number | string;
+  height?: number | string;
+}
+
+export const Input: React.FC<React.InputHTMLAttributes<any>> = props => {
   return <InputStyled {...props} />;
 };
 
-export const Textarea: React.FC<React.AllHTMLAttributes<any>> = props => {
+export const Textarea: React.FC<React.TextareaHTMLAttributes<any>> = props => {
   return <TextareaStyled {...props} />;
 };

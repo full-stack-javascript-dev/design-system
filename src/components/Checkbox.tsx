@@ -12,10 +12,13 @@ export enum CheckState {
   Checked = "Checked"
 }
 
-interface CheckBoxProps extends React.AllHTMLAttributes<any> {
+interface StyledCheckBoxProps extends React.InputHTMLAttributes<any> {
   label?: string;
   checkState: CheckState;
   triState?: boolean;
+}
+
+interface CheckBoxProps extends StyledCheckBoxProps {
   onCheckStateChange: (nextState: CheckState) => void;
 }
 
@@ -67,7 +70,7 @@ const CheckBoxStyled = styled.div`
     align-items: center;
   }
 
-  ${(props: CheckBoxProps) =>
+  ${(props: StyledCheckBoxProps) =>
     props.checkState === CheckState.NotSet &&
     css`
       color: #999;
@@ -80,14 +83,14 @@ const CheckBoxStyled = styled.div`
       }
     `};
 
-  ${(props: CheckBoxProps) =>
+  ${(props: StyledCheckBoxProps) =>
     props.checkState === CheckState.UnChecked &&
     css`
       > svg {
         color: #999;
       }
     `};
-  ${(props: CheckBoxProps) =>
+  ${(props: StyledCheckBoxProps) =>
     props.checkState === CheckState.Checked &&
     css`
       > svg {

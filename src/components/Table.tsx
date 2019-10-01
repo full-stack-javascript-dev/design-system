@@ -5,7 +5,7 @@ const cellCss = css`
   padding: 12px 16px;
 `;
 
-interface TableProps {
+interface TableProps extends React.TableHTMLAttributes<HTMLTableElement> {
   fillwidth?: boolean;
   children: any;
 }
@@ -27,7 +27,7 @@ export const Table: React.FC<TableProps> = ({ children, ...restProps }) => {
   );
 };
 
-interface TrProps extends React.AllHTMLAttributes<any> {
+interface TrProps extends React.HTMLAttributes<HTMLTableRowElement> {
   children: any;
   centralize?: boolean;
 }
@@ -51,7 +51,7 @@ export const Tr: React.FC<TrProps> = ({ children, ...restProps }) => {
   return <TrStyled {...restProps}>{children}</TrStyled>;
 };
 
-interface ThProps extends React.AllHTMLAttributes<any> {
+interface ThProps extends React.ThHTMLAttributes<HTMLTableHeaderCellElement> {
   children?: any;
   offsetCell?: boolean;
 }
@@ -72,7 +72,7 @@ export const Th: React.FC<ThProps> = ({ children, ...restProps }) => {
   return <ThStyled {...restProps}>{children}</ThStyled>;
 };
 
-interface TdProps extends React.AllHTMLAttributes<any> {
+interface TdProps extends React.TdHTMLAttributes<HTMLTableDataCellElement> {
   children?: any;
   offsetCell?: boolean;
 }
@@ -96,10 +96,9 @@ const TableHeaderControlsStyled = styled.div`
   padding: 6px 8px;
 `;
 
-export const TableHeaderControls: React.FC<React.AllHTMLAttributes<any>> = ({
-  children,
-  ...restProps
-}) => {
+export const TableHeaderControls: React.FC<
+  React.HTMLAttributes<HTMLDivElement>
+> = ({ children, ...restProps }) => {
   return (
     <TableHeaderControlsStyled {...restProps}>
       {children}
