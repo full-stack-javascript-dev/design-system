@@ -26,7 +26,7 @@ const ButtonTextStyled = styled.button`
   }
 `;
 
-interface ButtonTextProps extends React.AllHTMLAttributes<any> {
+interface ButtonTextProps extends React.ButtonHTMLAttributes<any> {
   children: any;
 }
 

@@ -34,7 +34,7 @@ const ButtonRoundStyled = styled.button`
   }
 `;
 
-interface ButtonRoundProps extends React.AllHTMLAttributes<any> {
+interface ButtonRoundProps extends React.ButtonHTMLAttributes<any> {
   children: any;
 }
 
@@ -45,7 +45,7 @@ export const ButtonRound: React.FC<ButtonRoundProps> = ({
   return <ButtonRoundStyled {...restProps}>{children}</ButtonRoundStyled>;
 };
 
-export const ButtonRoundAdd: React.FC<React.AllHTMLAttributes<any>> = ({
+export const ButtonRoundAdd: React.FC<React.ButtonHTMLAttributes<any>> = ({
   ...restProps
 }) => {
   return (
