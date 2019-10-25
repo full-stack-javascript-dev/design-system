@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CssNoSelect } from "./utils/StyleMixins";
+import { CssNoSelect } from "../utils/StyleMixins";
 
 const ButtonTextStyled = styled.button`
   color: rgb(0, 127, 224);

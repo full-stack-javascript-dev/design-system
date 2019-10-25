@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CssNoSelect } from "./utils/StyleMixins";
+import { CssNoSelect } from "../utils/StyleMixins";
 import { MdAdd } from "react-icons/md";
 
 const ButtonRoundStyled = styled.button`

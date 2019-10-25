@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { CssNoSelect } from "./utils/StyleMixins";
-import ThemeVars from "./ThemeVariables";
+import { CssNoSelect } from "../utils/StyleMixins";
+import ThemeVars from "../ThemeVariables";
 
 const StyledButton = styled.button`
   border-radius: 6px;
