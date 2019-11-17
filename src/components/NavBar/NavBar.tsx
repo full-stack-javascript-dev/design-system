@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { CssNoSelect } from "../../utils/StyleMixins";
-import ThemeVars from "../../ThemeVariables";
 
 const StyledNavBar = styled.nav<NavBarProps>`
   display: block;
@@ -49,26 +48,49 @@ export const NavBarMenu: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   return <StyledNavBarMenu {...restProps}>{children}</StyledNavBarMenu>;
 };
 
-const StyledNavBarMenuItem = styled.div`
+const StyledNavBarMenuItem = (comp: any) => styled(comp)`
   display: flex;
   align-items: center;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
-
+  text-decoration: none;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   transition: background-color 0.3s ease;
+  text-shadow: 0 0 4px #6b6b6b;
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
 `;
+
+const NavBarMenuItemDiv = StyledNavBarMenuItem("div");
 
 export const NavBarMenuItem: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   children,
   ...restProps
 }) => {
-  return <StyledNavBarMenuItem {...restProps}>{children}</StyledNavBarMenuItem>;
+  return (
+    <NavBarMenuItemDiv data-fsjsd-el="NavBarMenuItem" {...restProps}>
+      <div>{children}</div>
+    </NavBarMenuItemDiv>
+  );
+};
+
+/** Allows wrapping of NavBarMenuItem. This should be declared in your module with a const
+ * OUTSIDE of your component before use in render/JSX
+ */
+export const NavBarMenuItemComponent = (
+  component: React.ReactNode
+): React.FC<any> => ({ children, ...restProps }) => {
+  const NavBarMenuItem = StyledNavBarMenuItem(component);
+  return (
+    <NavBarMenuItem data-fsjsd-el="NavBarMenuItemComponent" {...restProps}>
+      {children}
+    </NavBarMenuItem>
+  );
 };

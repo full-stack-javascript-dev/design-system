@@ -7,4 +7,5 @@ export const CssNoSelect = `
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
    user-select:none;
+  -webkit-tap-highlight-color: transparent;
 `;

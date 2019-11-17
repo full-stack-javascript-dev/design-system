@@ -1,29 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import { CssNoSelect } from "../utils/StyleMixins";
-import ThemeVars from "../ThemeVariables";
 
 const StyledButton = styled.button`
   border-radius: 6px;
   border: none;
-  color: white;
   font-size: 14px;
   font-weight: bold;
-  background-color: ${ThemeVars.colors.primary};
+  color: ${props => props.theme.components.button.textColor};
+  background-color: ${props => props.theme.components.button.backgroundColor};
   padding: 10px 14px;
   transition: background-color 0.4s ease;
-  -webkit-tap-highlight-color: transparent;
   outline: none;
   cursor: pointer;
   ${CssNoSelect}
 
   &:hover {
-    background-color: rgb(13, 150, 255);
+    background-color: ${props =>
+      (props.theme.components.button.hover || props.theme.components.button)
+        .backgroundColor};
   }
 
   &:active,
   &:hover:active {
-    background-color: ${ThemeVars.colors.primaryActive};
+    background-color: ${props => props.theme.colors.primaryActive};
   }
 `;
 

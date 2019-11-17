@@ -1,11 +1,15 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { CssNoSelect } from "../utils/StyleMixins";
-import ThemeVars from "../ThemeVariables";
+
+import {
+  defaultBreakpoints,
+  ResponsiveContainerBreakpoint
+} from "../components/responsiveBreakpoints";
 
 const StyledResponsiveContainer = styled.div<ResponsiveContainerProps>`
   display: flex;
-
+  padding: 0 20px;
   ${props =>
     props.config &&
     props.config.breakpoints &&
@@ -14,6 +18,7 @@ const StyledResponsiveContainer = styled.div<ResponsiveContainerProps>`
         .map(
           breakpoint => `
   @media (min-width: ${breakpoint.minWidth}) {
+    padding:0 0;
     width: ${breakpoint.width};
   }
   `
@@ -27,10 +32,6 @@ const StyledResponsiveContainer = styled.div<ResponsiveContainerProps>`
       margin: 0 auto;
     `}
 `;
-interface ResponsiveContainerBreakpoint {
-  minWidth: number | string;
-  width: number | string;
-}
 
 interface ResponsiveContainerConfig {
   breakpoints: ResponsiveContainerBreakpoint[];
@@ -45,12 +46,7 @@ interface ResponsiveContainerProps
 // TODO: Resolve default from Theme Provider?
 
 const defaultConfig: ResponsiveContainerConfig = {
-  breakpoints: [
-    { width: "480px", minWidth: "480px" },
-    { width: "768px", minWidth: "768px" },
-    { width: "992px", minWidth: "992px" },
-    { width: "1200px", minWidth: "1200px" }
-  ]
+  breakpoints: defaultBreakpoints
 };
 
 export const ResponsiveContainer: React.FC<ResponsiveContainerProps> = ({
@@ -61,6 +57,7 @@ export const ResponsiveContainer: React.FC<ResponsiveContainerProps> = ({
 }) => {
   return (
     <StyledResponsiveContainer
+      data-fsjsd-el="ResponsiveContainer"
       centreContainer={centreContainer}
       config={config}
       {...restProps}

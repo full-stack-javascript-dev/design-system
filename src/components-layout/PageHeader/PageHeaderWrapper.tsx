@@ -1,13 +1,19 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { CssNoSelect } from "../../utils/StyleMixins";
-import ThemeVars from "../../ThemeVariables";
 
 const StyledPageHeaderWrapper = styled.div<PageHeaderWrapperProps>`
   ${props =>
+    props.backgroundColor &&
+    css`
+      background-color: ${props.backgroundColor};
+    `}
+  ${props =>
     typeof props.backgroundImage !== undefined &&
     css`
-      background-image: url('${props.backgroundImage}')
+      background-image: url('${props.backgroundImage}');
+      background-position: center center;
+      background-size: cover;
     `}
   ${props =>
     props.coverImage &&
@@ -25,6 +31,7 @@ const StyledPageHeaderWrapper = styled.div<PageHeaderWrapperProps>`
 
 interface PageHeaderWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   backgroundImage?: string;
+  backgroundColor?: string;
   coverImage?: boolean;
   coverImageBlur?: boolean;
 }
@@ -34,6 +41,8 @@ export const PageHeaderWrapper: React.FC<PageHeaderWrapperProps> = ({
   ...restProps
 }) => {
   return (
-    <StyledPageHeaderWrapper {...restProps}>{children}</StyledPageHeaderWrapper>
+    <StyledPageHeaderWrapper data-fsjsd-el="PageHeaderWrapper" {...restProps}>
+      {children}
+    </StyledPageHeaderWrapper>
   );
 };
