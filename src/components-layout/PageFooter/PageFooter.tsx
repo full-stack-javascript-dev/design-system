@@ -23,6 +23,7 @@ export const PageFooter: React.FC<PageFooterProps> = ({
 
 const StyledPageFooterIcon = styled.div`
   display: inline-block;
+  margin-right: 20px;
   svg {
     color: white;
     font-size: 3rem;

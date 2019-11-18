@@ -25,6 +25,9 @@ const StyledLayoutContentColumns = styled.div<LayoutContentColumnsConfigProps>`
     css`
       @media (min-width: 600px) {
         flex-direction: row;
+        & > div + div {
+          margin-left: 20px;
+        }
       }
     `}
 

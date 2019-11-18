@@ -18,7 +18,7 @@ const StyledResponsiveContainer = styled.div<ResponsiveContainerProps>`
         .map(
           breakpoint => `
   @media (min-width: ${breakpoint.minWidth}) {
-    padding:0 0;
+    padding:0 ${breakpoint.contentPadding};
     width: ${breakpoint.width};
   }
   `

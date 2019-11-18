@@ -14,6 +14,7 @@ import {
 import { NavLinks } from "./shared/NavLinks";
 import { Link } from "react-router-dom";
 import { H1, H2, H3, H4 } from "../components/Headings";
+import { ContentList, ContentListItem } from "../components/ContentList";
 
 import { Footer } from "./shared/Footer";
 import styled from "styled-components";
@@ -67,7 +68,7 @@ export const BlogPost: React.FC = () => {
                 </p>
               </div>
             </LayoutContentColumn>
-            <LayoutContentColumn style={{ width: "200px" }}>
+            <LayoutContentColumn style={{ width: "300px" }}>
               <H4>Recent Posts</H4>
               <ContentList>
                 <ContentListItem>
@@ -99,23 +100,3 @@ export const BlogPost: React.FC = () => {
     </>
   );
 };
-
-const ContentList = styled.div``;
-
-const ContentListItem = styled.div`
-  margin-bottom: 15px;
-  border-bottom: solid 1px #ddd;
-  padding-bottom: 15px;
-  color: #575757;
-  line-height: 22px;
-  font-size: 14px;
-  a {
-    font-size: 16px;
-    margin-bottom: 6px;
-    margin-top: 2px;
-    line-height: 1.4;
-  }
-  span.published {
-    color: #aeaeae;
-  }
-`;

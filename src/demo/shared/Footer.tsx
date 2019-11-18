@@ -7,37 +7,60 @@ import {
 import { ResponsiveContainer } from "../../components-layout/ResponsiveContainer";
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa"; // pick more icons here: https://react-icons.netlify.com/#/icons/fa
 import { ToyShooter } from "../toyshooter";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const PageFooterStyled = styled(PageFooter)`
+  background-image: linear-gradient(to bottom, #9a4ee1 0%, #8c55de 100%);
+  background-repeat: repeat-x;
+  color: #d6b5fc;
+
+  a {
+    color: white;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+`;
 
 export const Footer = () => (
-  <PageFooter
-    data-fsjsd-el="PageFooter"
-    style={{
-      backgroundImage: "linear-gradient(to bottom,#9a4ee1 0%,#8c55de 100%)",
-      backgroundRepeat: "repeat-x",
-      color: "#d6b5fc"
-    }}
-  >
+  <PageFooterStyled data-fsjsd-el="PageFooter">
     <ResponsiveContainer centreContainer={true}>
       <div
         style={{
           display: "grid",
           width: "100%",
-          gridTemplateColumns: "auto 200px"
+          gridTemplateColumns: "auto 250px"
         }}
       >
-        <ToyShooter style={{ maxWidth: 338 }} />
+        <div>
+          <Link to="/">
+            <ToyShooter style={{ maxWidth: 338 }} />
+          </Link>
+          <p>
+            © 2019. <Link to="/articles/terms">Terms</Link> |{" "}
+            <Link to="/articles/privacy">Privacy Policy</Link>
+          </p>
+        </div>
+
         <div style={{ textAlign: "right" }}>
-          <PageFooterIcon>
-            <FaYoutube />
-          </PageFooterIcon>
-          <PageFooterIcon>
-            <FaInstagram />
-          </PageFooterIcon>
-          <PageFooterIcon>
-            <FaFacebook />
-          </PageFooterIcon>
+          <a href="https://www.youtube.com/c/toyshooter" target="_blank">
+            <PageFooterIcon>
+              <FaYoutube />
+            </PageFooterIcon>
+          </a>
+          <a href="https://www.instagram.com/weshoottoys/" target="_blank">
+            <PageFooterIcon>
+              <FaInstagram />
+            </PageFooterIcon>
+          </a>
+          <a href="https://www.facebook.com/toyshooter/" target="_blank">
+            <PageFooterIcon>
+              <FaFacebook />
+            </PageFooterIcon>
+          </a>
         </div>
       </div>
     </ResponsiveContainer>
-  </PageFooter>
+  </PageFooterStyled>
 );
