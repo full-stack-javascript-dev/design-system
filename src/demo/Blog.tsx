@@ -21,12 +21,12 @@ import styled from "styled-components";
 
 const TagLink = TagComponent(Link);
 
-export const Galleries: React.FC = () => {
+export const Blog: React.FC = () => {
   return (
     <>
       <PageHeaderWrapper>
         <PageHeader>
-          <NavBar backgroundColor={"#3087de"}>
+          <NavBar>
             <NavLinks />
           </NavBar>
         </PageHeader>
@@ -38,34 +38,16 @@ export const Galleries: React.FC = () => {
           style={{ flex: "1 0 auto" }}
         >
           <LayoutContentColumns>
-            <LayoutContentColumn style={{ flexGrow: 1 }}>
+            <LayoutContentColumn style={{ flexGrow: 2 }}>
               <div>
-                <p>Pic</p>
-                <a href="/gallery/lightingstudies">
-                  <H2>Lighting Studies</H2>
-                </a>
-                <p>Info</p>
+                <H1>Blog</H1>
+
+                <p>TODO</p>
               </div>
             </LayoutContentColumn>
-
-            <LayoutContentColumn style={{ flexGrow: 1 }}>
-              <div>
-                <p>Pic</p>
-                <a href="/gallery/scenes">
-                  <H2>Scenes</H2>
-                </a>
-                <p>Info</p>
-              </div>
-            </LayoutContentColumn>
-
-            <LayoutContentColumn style={{ flexGrow: 1 }}>
-              <div>
-                <p>Pic</p>
-                <a href="/gallery/compositions">
-                  <H2>Compositions</H2>
-                </a>
-                <p>Info</p>
-              </div>
+            <LayoutContentColumn style={{ width: "300px" }}>
+              <H4>Recent Posts</H4>
+              <p>Stuff</p>
             </LayoutContentColumn>
           </LayoutContentColumns>
         </ResponsiveContainer>

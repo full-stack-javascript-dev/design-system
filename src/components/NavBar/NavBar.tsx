@@ -12,11 +12,17 @@ const StyledNavBar = styled.nav<NavBarProps>`
     css`
       background-color: ${props.backgroundColor};
     `}
+  ${props =>
+    props.background &&
+    css`
+      background: ${props.background};
+    `}
 `;
 
 interface NavBarProps extends React.HTMLAttributes<HTMLElement> {
   children?: any;
   backgroundColor?: string;
+  background?: string;
 }
 
 export const NavBar: React.FC<NavBarProps> = ({ children, ...restProps }) => {

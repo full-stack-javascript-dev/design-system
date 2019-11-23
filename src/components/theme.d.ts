@@ -7,7 +7,8 @@ declare module "styled-components" {
       heading: string;
     };
     colors: {
-      text: string;
+      body?: string;
+      text?: string;
       heading?: string;
       primary: string;
       primaryActive: string;

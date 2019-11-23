@@ -5,7 +5,7 @@ const baseHeader = css`
   margin-top: 0;
   letter-spacing: -0.7pt;
   font-family: ${props => props.theme.fonts.heading};
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
 `;
 

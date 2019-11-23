@@ -9,6 +9,7 @@ import { GalleryPhoto } from "./demo/GalleryPhoto";
 import { Youtube } from "./demo/Youtube";
 import { YoutubeVideo } from "./demo/YoutubeVideo";
 import { BlogPost } from "./demo/BlogPost";
+import { Blog } from "./demo/Blog";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./demo/theme";
 import { GlobalStyle } from "./components/GlobalStyle";
@@ -27,10 +28,13 @@ const App: React.FC = () => {
               <Route path="/gallery/:galleryid">
                 <Gallery />
               </Route>
-              <Route path="/photo/:photoid">
+              <Route path="/photo/:galleryid/:photoid">
                 <GalleryPhoto />
               </Route>
-              <Route path="/blogpost">
+              <Route path="/blog">
+                <Blog />
+              </Route>
+              <Route path="/blogpost/:slug">
                 <BlogPost />
               </Route>
               <Route path="/youtube">

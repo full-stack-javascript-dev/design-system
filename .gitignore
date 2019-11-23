@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# toyshooter CDN folder => deployed by GitHub / CodePipeline
+/public/cdn
+
 # production
 /build
 

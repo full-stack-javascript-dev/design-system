@@ -10,6 +10,7 @@ import {
 const StyledResponsiveContainer = styled.div<ResponsiveContainerProps>`
   display: flex;
   padding: 0 20px;
+  position: relative;
   ${props =>
     props.config &&
     props.config.breakpoints &&

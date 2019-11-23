@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     heading: "Montserrat, sans serif"
   },
   colors: {
+    body: "#f4f4f9",
     text: "#444",
     heading: "#3d698e",
     primary: "rgb(0, 127, 224)",
@@ -24,4 +25,9 @@ const theme: DefaultTheme = {
   }
 };
 
-export { theme };
+const toyshooterTheme = {
+  navBarFadeGradient:
+    "linear-gradient(to bottom,rgba(5,117,193,0.7) 0%,rgba(48,135,222,0) 100%);"
+};
+
+export { theme, toyshooterTheme };

@@ -38,7 +38,7 @@ export const NavLinks: React.FC = () => {
         <NavBarLink to="/">Home</NavBarLink>
         <NavBarLink to="/youtube">Youtube</NavBarLink>
         <NavBarLink to="/galleries">Gallery</NavBarLink>
-        <NavBarLink to="/blogpost">Blog</NavBarLink>
+        <NavBarLink to="/blog">Blog</NavBarLink>
       </NavBarMenu>
     </ResponsiveContainer>
   );

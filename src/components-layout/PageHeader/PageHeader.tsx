@@ -5,6 +5,7 @@ import { CssNoSelect } from "../../utils/StyleMixins";
 
 const StyledPageHeader = styled.div<PageHeaderProps>`
   display: flex;
+  position: relative;
   ${props =>
     props.backgroundColor &&
     css`
@@ -36,6 +37,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 const StyledPageHeaderContent = styled.div`
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
 
   h1 {
     font-family: Montserrat, sans serif;
