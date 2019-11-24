@@ -1,14 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Root } from "./components/Root";
-import { ThemeProvider } from "styled-components";
-//import { theme } from "../../websites/shoot.toys/src/screens/theme";
-import { GlobalStyle } from "./components/GlobalStyle";
 
-const App: React.FC = () => {
-  return <></>;
+const App = () => {
+  return React.createElement(React.Fragment, null);
 };
-
 /*
     <ThemeProvider theme={theme}>
       <>
@@ -43,5 +37,6 @@ const App: React.FC = () => {
       </>
     </ThemeProvider>
     */
+
 
 export default App;

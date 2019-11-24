@@ -1,0 +1,2 @@
+export declare const CssNoSelect = "\n    user-select: none; /* supported by Chrome and Opera */\n   -webkit-user-select: none; /* Safari */\n   -khtml-user-select: none; /* Konqueror HTML */\n   -moz-user-select: none; /* Firefox */\n   -ms-user-select: none; /* Internet Explorer/Edge */\n   user-select:none;\n  -webkit-tap-highlight-color: transparent;\n";
+//# sourceMappingURL=StyleMixins.d.ts.map

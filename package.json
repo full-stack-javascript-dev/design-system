@@ -2,28 +2,16 @@
   "name": "fsjsd-design-system",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.8",
-    "@types/react": "16.9.4",
-    "@types/react-dom": "16.9.1",
-    "@types/react-router-dom": "^5.1.2",
-    "@types/styled-components": "4.1.19",
-    "polished": "^3.4.2",
-    "react": "16.10.1",
-    "react-dom": "16.10.1",
-    "react-icons": "^3.7.0",
-    "react-photo-gallery": "^8.0.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.1.2",
-    "react-snapshot": "^1.3.0",
-    "stackblur-canvas": "^2.2.0",
-    "styled-components": "4.4.0",
-    "typescript": "3.6.3"
+  "main": "dist/exports.js",
+  "module": "dist/exports.js",
+  "types": "dist/exports.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src --out-dir dist --extensions .ts,.tsx --presets=@babel/react,@babel/preset-typescript --ignore __tests__,spec.js,test.js,stories.js,stories.ts,stories.tsx,__snapshots__ && tsc --project tsconfig.types.json",
+    "build-cra": "react-scripts build",
     "build-static": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +30,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.8",
+    "@types/react": "16.9.4",
+    "@types/react-dom": "16.9.1",
+    "@types/react-router-dom": "^5.1.2",
+    "@types/styled-components": "4.1.19",
+    "polished": "^3.4.2",
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-icons": "^3.7.0",
+    "react-photo-gallery": "^8.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "react-snapshot": "^1.3.0",
+    "stackblur-canvas": "^2.2.0",
+    "styled-components": "4.4.0",
+    "typescript": "3.6.3"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6"

@@ -20,6 +20,6 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src", "../websites/shoot.toys/src/shared", "../websites/shoot.toys/src/screens/theme.ts", "../websites/shoot.toys/src/screens/Gallery.tsx", "../websites/shoot.toys/src/screens/GalleryPhoto.tsx", "../websites/shoot.toys/src/screens/toyshooter.tsx", "../websites/shoot.toys/src/screens/Galleries.tsx", "../websites/shoot.toys/src/screens/Youtube.tsx", "../websites/shoot.toys/src/screens/YoutubeVideo.tsx"
   ]
 }
