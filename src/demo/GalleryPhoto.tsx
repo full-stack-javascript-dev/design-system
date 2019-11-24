@@ -17,9 +17,8 @@ import { NavLinks } from "./shared/NavLinks";
 import { Link } from "react-router-dom";
 import { H1, H2, H3, H4 } from "../components/Headings";
 import { ContentList, ContentListItem } from "../components/ContentList";
-
+import { CanvasBlur } from "../components/CanvasBlur";
 import { Footer } from "./shared/Footer";
-import styled from "styled-components";
 import { useRouteMatch, useHistory } from "react-router-dom";
 import { canvasRGBA } from "stackblur-canvas";
 import { toyshooterTheme } from "./theme";
@@ -27,15 +26,6 @@ import { toyshooterTheme } from "./theme";
 import { FaImage } from "react-icons/fa"; // pick more icons here: https://react-icons.netlify.com/#/icons/fa
 
 const TagLink = TagComponent(Link);
-
-const CanvasBlur = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-`;
 
 // Change this value to adjust the amount of blur
 const BLUR_RADIUS = 100;
