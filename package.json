@@ -1,7 +1,6 @@
 {
-  "name": "fsjsd-design-system",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@fsjsd/design-system",
+  "version": "0.3.0",
   "main": "dist/exports.js",
   "module": "dist/exports.js",
   "types": "dist/exports.d.ts",

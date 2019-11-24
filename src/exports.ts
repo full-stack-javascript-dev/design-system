@@ -49,6 +49,7 @@ export {
   FormControl,
   FormLabel,
   FormElement,
+  GlobalStyle,
   H1,
   H2,
   H3,
