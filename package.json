@@ -1,6 +1,6 @@
 {
   "name": "@fsjsd/design-system",
-  "version": "0.3.0",
+  "version": "0.8.0",
   "main": "dist/exports.js",
   "module": "dist/exports.js",
   "types": "dist/exports.d.ts",
@@ -8,8 +8,9 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
+    "prepublishOnly": "npm run build",
     "start": "react-scripts start",
-    "build": "babel src --out-dir dist --extensions .ts,.tsx --presets=@babel/react,@babel/preset-typescript --ignore __tests__,spec.js,test.js,stories.js,stories.ts,stories.tsx,__snapshots__ && tsc --project tsconfig.types.json",
+    "build": "babel src --delete-dir-on-start --out-dir dist --extensions .ts,.tsx --presets=@babel/react,@babel/preset-typescript --ignore __tests__,spec.js,test.js,stories.js,stories.ts,stories.tsx,__snapshots__ && tsc --project tsconfig.types.json",
     "build-cra": "react-scripts build",
     "build-static": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
