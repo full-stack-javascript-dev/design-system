@@ -2779,10 +2779,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/styled-components@4.1.19":
-  version "4.1.19"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.19.tgz#535b455d7744fda1608c605df82c0800eda61a09"
-  integrity sha512-nDkoTQ8ItcJiyEvTa24TwsIpIfNKCG+Lq0LvAwApOcjQ8OaeOOCg66YSPHBePHUh6RPt1LA8aEzRlgWhQPFqPg==
+"@types/styled-components@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.4.0.tgz#15a3d59533fd3a5bd013db4a7c4422ec542c59d2"
+  integrity sha512-QFl+w3hQJNHE64Or3PXMFpC3HAQDiuQLi5o9m1XPEwYWfgCZtAribO5ksjxnO8U0LG8Parh0ESCgVxo4VfxlHg==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
@@ -6192,15 +6192,16 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-loader@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-3.0.0.tgz#fb70bc2d552a674f43f07f5e6575083e565e790d"
-  integrity sha512-rdxyQ0i9VlhwVlR6oEzrIft8WNKYSD2/cOAJ1YVH/F76gAta7Zv1Dr5xJOUyx0fAsHB5cKNz9hwlUVLMFsQlPA==
+eslint-loader@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-3.0.2.tgz#5a627316a51d6f41d357b9f6f0554e91506cdd6e"
+  integrity sha512-S5VnD+UpVY1PyYRqeBd/4pgsmkvSokbHqTXAQMpvCyRr3XN2tvSLo9spm2nEpqQqh9dezw3os/0zWihLeOg2Rw==
   dependencies:
+    fs-extra "^8.1.0"
     loader-fs-cache "^1.0.2"
     loader-utils "^1.2.3"
     object-hash "^1.3.1"
-    schema-utils "^2.1.0"
+    schema-utils "^2.2.0"
 
 eslint-module-utils@^2.4.0:
   version "2.4.1"
@@ -8388,6 +8389,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+is-number@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/is-number/-/is-number-4.0.0.tgz#0026e37f5454d73e356dfe6564699867c6a7f0ff"
+  integrity sha512-rSklcAIlf1OmFdyAqbnWTLVelsQ58uvZ66S/ZyawjWqIviTWCjg2PzVGw8WUA+nNuPTqb4wgA+NszrJ+08LlgQ==
 
 is-obj@^1.0.0, is-obj@^1.0.1:
   version "1.0.1"
@@ -12393,10 +12399,10 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-app-polyfill@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-1.0.3.tgz#bd7030ebf66569f3aece03e39ab85ca700d8d0f6"
-  integrity sha512-ICvAU2vtO0k+kU0oCS7L7btUcAReTddvEiRiJDmAKc+d98Fy9Z1g6cjkdcKyfLWwopzBsUMcDwxoiNtrtLMs0Q==
+react-app-polyfill@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-1.0.4.tgz#4dd2636846b585c2d842b1e44e1bc29044345874"
+  integrity sha512-5Vte6ki7jpNsNCUKaboyofAhmURmCn2Y6Hu7ydJ6Iu4dct1CIGoh/1FT7gUZKAbowVX2lxVPlijvp1nKxfAl4w==
   dependencies:
     core-js "3.2.1"
     object-assign "4.1.1"
@@ -12467,7 +12473,7 @@ react-dev-utils@^9.0.4:
     loader-utils "1.2.3"
     open "^6.3.0"
     pkg-up "2.0.0"
-    react-error-overlay "^6.0.2"
+    react-error-overlay "^6.0.3"
     recursive-readdir "2.2.2"
     shell-quote "1.7.2"
     sockjs-client "1.4.0"
@@ -12495,7 +12501,7 @@ react-dom@16.10.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.16.1"
+    scheduler "^0.18.0"
 
 react-dom@^16.8.3:
   version "16.12.0"
@@ -12672,7 +12678,7 @@ react-scripts@3.1.2:
     dotenv-expand "5.1.0"
     eslint "^6.1.0"
     eslint-config-react-app "^5.0.2"
-    eslint-loader "3.0.0"
+    eslint-loader "3.0.2"
     eslint-plugin-flowtype "3.13.0"
     eslint-plugin-import "2.18.2"
     eslint-plugin-jsx-a11y "6.2.3"
@@ -12695,8 +12701,8 @@ react-scripts@3.1.2:
     postcss-normalize "7.0.1"
     postcss-preset-env "6.7.0"
     postcss-safe-parser "4.0.1"
-    react-app-polyfill "^1.0.3"
-    react-dev-utils "^9.0.4"
+    react-app-polyfill "^1.0.4"
+    react-dev-utils "^9.1.0"
     resolve "1.12.0"
     resolve-url-loader "3.1.0"
     sass-loader "7.2.0"
@@ -12705,9 +12711,9 @@ react-scripts@3.1.2:
     terser-webpack-plugin "1.4.1"
     ts-pnp "1.1.4"
     url-loader "2.1.0"
-    webpack "4.40.2"
+    webpack "4.41.0"
     webpack-dev-server "3.2.1"
-    webpack-manifest-plugin "2.0.4"
+    webpack-manifest-plugin "2.1.1"
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
@@ -13433,10 +13439,10 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-scheduler@^0.16.1:
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.16.1.tgz#a6fb6ddec12dc2119176e6eb54ecfe69a9eba8df"
-  integrity sha512-MIuie7SgsqMYOdCXVFZa8SKoNorJZUWHW8dPgto7uEHn1lX3fg2Gu0TzgK8USj76uxV7vB5eRMnZs/cdEHg+cg==
+scheduler@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
+  integrity sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -13458,7 +13464,7 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^2.0.0, schema-utils@^2.0.1, schema-utils@^2.1.0:
+schema-utils@^2.0.0, schema-utils@^2.0.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.4.1.tgz#e89ade5d056dc8bcaca377574bb4a9c4e1b8be56"
   integrity sha512-RqYLpkPZX5Oc3fw/kHHHyP56fg5Y+XBpIpV8nCg0znIALfq3OH+Ea9Hfeac9BAMwG5IICltiZ0vxFvJQONfA5w==
@@ -14815,10 +14821,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
-  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+typescript@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.2.tgz#27e489b95fa5909445e9fef5ee48d81697ad18fb"
+  integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"
@@ -15372,13 +15378,14 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-manifest-plugin@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/webpack-manifest-plugin/-/webpack-manifest-plugin-2.0.4.tgz#e4ca2999b09557716b8ba4475fb79fab5986f0cd"
-  integrity sha512-nejhOHexXDBKQOj/5v5IZSfCeTO3x1Dt1RZEcGfBSul891X/eLIcIVH31gwxPDdsi2Z8LKKFGpM4w9+oTBOSCg==
+webpack-manifest-plugin@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/webpack-manifest-plugin/-/webpack-manifest-plugin-2.1.1.tgz#6b3e280327815b83152c79f42d0ca13b665773c4"
+  integrity sha512-2zqJ6mvc3yoiqfDjghAIpljhLSDh/G7vqGrzYcYqqRCd/ZZZCAuc/YPE5xG0LGpLgDJRhUNV1H+znyyhIxahzA==
   dependencies:
     fs-extra "^7.0.0"
     lodash ">=3.5 <5"
+    object.entries "^1.1.0"
     tapable "^1.0.0"
 
 webpack-sources@^1.1.0:
@@ -15397,10 +15404,10 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.40.2:
-  version "4.40.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.40.2.tgz#d21433d250f900bf0facbabe8f50d585b2dc30a7"
-  integrity sha512-5nIvteTDCUws2DVvP9Qe+JPla7kWPPIDFZv55To7IycHWZ+Z5qBdaBYPyuXWdhggTufZkQwfIK+5rKQTVovm2A==
+webpack@4.41.0:
+  version "4.41.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.0.tgz#db6a254bde671769f7c14e90a1a55e73602fc70b"
+  integrity sha512-yNV98U4r7wX1VJAj5kyMsu36T8RPPQntcb5fJLOsMz/pt/WrKC0Vp1bAlqPLkA1LegSwQwf6P+kAbyhRKVQ72g==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
