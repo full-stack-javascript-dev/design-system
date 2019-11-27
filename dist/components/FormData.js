@@ -34,6 +34,8 @@ const FormLabelStyled = styled.div`
   padding: 7px 9px;
   ${props => css``}
 `;
+/** Label for form element */
+
 export const FormLabel = ({
   children,
   ...restProps
@@ -48,4 +50,16 @@ export const FormElement = ({
   ...restProps
 }) => {
   return React.createElement(FormElementStyled, restProps, children);
+};
+const FormInlineStyled = styled.div`
+  ${props => css``}
+  &> * + * {
+    margin-left:8px;
+  }
+`;
+export const FormInline = ({
+  children,
+  ...restProps
+}) => {
+  return React.createElement(FormInlineStyled, restProps, children);
 };

@@ -9,7 +9,7 @@ import { Content } from "./components/Content";
 import { ContentList, ContentListItem } from "./components/ContentList";
 import { ControlledTransitionAnimation, ControlledKeyframeAnimation } from "./components/ControlledAnimation";
 import { DropDownMenu } from "./components/DropDownMenu";
-import { FormControl, FormLabel, FormElement } from "./components/FormData";
+import { FormControl, FormInline, FormLabel, FormElement } from "./components/FormData";
 import { GlobalStyle } from "./components/GlobalStyle";
 import { H1, H2, H3, H4 } from "./components/Headings";
 import { ImgResponsive } from "./components/ImgResponsive";
@@ -26,4 +26,5 @@ import { PageHeader, PageHeaderContent } from "./components-layout/PageHeader/Pa
 import { PageHeaderWrapper } from "./components-layout/PageHeader/PageHeaderWrapper";
 import { LayoutContentColumn, LayoutContentColumns } from "./components-layout/LayoutContentColumns";
 import { ResponsiveContainer } from "./components-layout/ResponsiveContainer";
-export { NavBar, NavBarLogo, NavBarMenu, NavBarMenuItem, NavBarMenuItemComponent, Button, ButtonRound, ButtonText, CanvasBlur, CarouselPromo, CheckBox, Content, ContentList, ContentListItem, ControlledTransitionAnimation, ControlledKeyframeAnimation, DropDownMenu, FormControl, FormLabel, FormElement, GlobalStyle, H1, H2, H3, H4, ImgResponsive, Input, ModalDialog, PageInfoBar, PageInfoBarContent, Root, Table, TagList, TagComponent, Text, ToggleButton, PageFooter, PageFooterIcon, PageHeader, PageHeaderWrapper, PageHeaderContent, LayoutContentColumn, LayoutContentColumns, ResponsiveContainer };
+import { defaultTheme } from "./theme";
+export { NavBar, NavBarLogo, NavBarMenu, NavBarMenuItem, NavBarMenuItemComponent, Button, ButtonRound, ButtonText, CanvasBlur, CarouselPromo, CheckBox, Content, ContentList, ContentListItem, ControlledTransitionAnimation, ControlledKeyframeAnimation, DropDownMenu, FormControl, FormInline, FormLabel, FormElement, GlobalStyle, H1, H2, H3, H4, ImgResponsive, Input, ModalDialog, PageInfoBar, PageInfoBarContent, Root, Table, TagList, TagComponent, Text, ToggleButton, PageFooter, PageFooterIcon, PageHeader, PageHeaderWrapper, PageHeaderContent, LayoutContentColumn, LayoutContentColumns, ResponsiveContainer, defaultTheme };

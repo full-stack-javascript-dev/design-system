@@ -18,7 +18,7 @@ const StyledLayoutContentColumns = styled.div`
   padding: 25px 0;
 
   ${props => css`
-      @media (min-width: 600px) {
+      @media (min-width: 800px) {
         flex-direction: row;
         & > div + div {
           margin-left: 20px;

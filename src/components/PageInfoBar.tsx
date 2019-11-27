@@ -33,7 +33,7 @@ export const PageInfoBarContentStyled = styled.div`
 
     span {
       &.crumb {
-        font-weight: 500;
+        font-weight: 600;
         color: #4fafea;
         padding-right: 15px;
         border-right: solid 1px #4fafea;

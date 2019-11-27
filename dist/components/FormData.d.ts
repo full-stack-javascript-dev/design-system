@@ -13,10 +13,15 @@ export declare const FormControl: React.FC<FormControlProps>;
 interface FormLabelProps extends React.HTMLAttributes<any> {
     children?: any;
 }
+/** Label for form element */
 export declare const FormLabel: React.FC<FormLabelProps>;
 interface FormElementProps extends React.HTMLAttributes<any> {
     children?: any;
 }
 export declare const FormElement: React.FC<FormElementProps>;
+interface FormInlineProps extends React.HTMLAttributes<any> {
+    children?: any;
+}
+export declare const FormInline: React.FC<FormInlineProps>;
 export {};
 //# sourceMappingURL=FormData.d.ts.map

@@ -1,5 +1,7 @@
 import React from "react";
 interface ButtonProps extends React.ButtonHTMLAttributes<any> {
+    size?: 'small' | 'medium' | 'large';
+    block?: boolean;
     children?: any;
 }
 export declare const Button: React.FC<ButtonProps>;

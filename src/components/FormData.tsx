@@ -61,6 +61,7 @@ const FormLabelStyled = styled.div`
   ${(props: FormLabelProps) => css``}
 `;
 
+/** Label for form element */
 export const FormLabel: React.FC<FormLabelProps> = ({
   children,
   ...restProps
@@ -81,4 +82,21 @@ export const FormElement: React.FC<FormElementProps> = ({
   ...restProps
 }) => {
   return <FormElementStyled {...restProps}>{children}</FormElementStyled>;
+};
+
+const FormInlineStyled = styled.div`
+  ${(props: FormInlineProps) => css``}
+  &> * + * {
+    margin-left:8px;
+  }
+`;
+
+interface FormInlineProps extends React.HTMLAttributes<any> {
+  children?: any;
+}
+export const FormInline: React.FC<FormInlineProps> = ({
+  children,
+  ...restProps
+}) => {
+  return <FormInlineStyled {...restProps}>{children}</FormInlineStyled>;
 };

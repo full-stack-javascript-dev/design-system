@@ -5,6 +5,7 @@ declare module "styled-components" {
     fonts: {
       primary: string;
       heading: string;
+      button: string;
     };
     colors: {
       body?: string;
@@ -24,5 +25,11 @@ declare module "styled-components" {
         };
       };
     };
+    units:{
+      forms:{
+        padding:number,
+        fontSize:number,
+      }
+    }
   }
 }

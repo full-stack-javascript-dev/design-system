@@ -23,7 +23,7 @@ const StyledLayoutContentColumns = styled.div<LayoutContentColumnsConfigProps>`
 
   ${props =>
     css`
-      @media (min-width: 600px) {
+      @media (min-width: 800px) {
         flex-direction: row;
         & > div + div {
           margin-left: 20px;

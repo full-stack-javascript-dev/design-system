@@ -28,5 +28,23 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.linkHover};
     text-decoration: underline;
   }
-
+    .embed-responsive{
+      position: relative;
+      display: block;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+    } 
+    .embed-responsive-16by9{
+      padding-bottom: 56.25%;
+    }
+    .embed-responsive-item{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
 `;
