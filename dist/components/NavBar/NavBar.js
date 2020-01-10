@@ -54,7 +54,9 @@ const StyledNavBarMenuItem = comp => styled(comp)`
   background-color: transparent;
   transition: background-color 0.3s ease;
   text-shadow: 0 0 4px #6b6b6b;
-  &:hover {
+  &:hover,
+  &:active,
+  &:active:hover {
     color: white;
     background-color: rgba(255, 255, 255, 0.15);
     transition: background-color 0.3s ease;

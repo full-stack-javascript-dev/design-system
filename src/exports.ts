@@ -3,7 +3,7 @@ import { NavBar,
   NavBarMenu,
   NavBarMenuItem,
   NavBarMenuItemComponent } from "./components/NavBar/NavBar";
-import { Button } from "./components/Button";
+import { Button, ButtonLink } from "./components/Button";
 import { ButtonRound } from "./components/ButtonRound";
 import { ButtonText } from "./components/ButtonText";
 import { CanvasBlur } from "./components/CanvasBlur";
@@ -26,7 +26,7 @@ import { ModalDialog } from "./components/ModalDialog";
 import { PageInfoBar, PageInfoBarContent } from "./components/PageInfoBar";
 import { Root } from "./components/Root";
 import { Table } from "./components/Table";
-import { TagList, TagComponent } from "./components/TagList";
+import { TagList, Tag, TagComponent } from "./components/TagList";
 import { Text } from "./components/Text";
 import { ToggleButton } from "./components/ToggleButton";
 
@@ -52,6 +52,7 @@ export {
   Button,
   ButtonRound,
   ButtonText,
+  ButtonLink,
   CanvasBlur,
   CarouselPromo,
   CheckBox,
@@ -78,6 +79,7 @@ export {
   Root,
   Table,
   TagList,
+  Tag,
   TagComponent,
   Text,
   ToggleButton,

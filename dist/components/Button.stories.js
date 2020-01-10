@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button, ButtonLink } from './Button';
 export default {
   title: 'components/Button'
 };
@@ -14,4 +14,7 @@ export const AllSizes = () => {
     block: true,
     size: "medium"
   }, "Hello")));
+};
+export const Link = () => {
+  return React.createElement(ButtonLink, null, "Test");
 };

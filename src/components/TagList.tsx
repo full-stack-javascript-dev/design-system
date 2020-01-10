@@ -17,8 +17,11 @@ const TagStyled = (baseElement: any) => styled(baseElement)`
       background-color: ${props.backgroundColor || "#555"};
       color: ${props.color || "#FFF"};
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:hover:active {
         background-color: ${lighten(0.2, props.backgroundColor || "#000")};
+        color: ${props.color || "#FFF"};
       }
     `}
 `;

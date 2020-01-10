@@ -5,6 +5,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<any> {
     children?: any;
 }
 export declare const Button: React.FC<ButtonProps>;
+export declare const ButtonLink: React.FC<ButtonProps>;
 interface ButtonGroupProps extends React.HTMLAttributes<any> {
     children: any;
 }

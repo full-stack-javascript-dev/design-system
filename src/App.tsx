@@ -1,47 +1,49 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Root } from "./components/Root";
 import { ThemeProvider } from "styled-components";
-//import { theme } from "../../websites/shoot.toys/src/screens/theme";
-import { GlobalStyle } from "./components/GlobalStyle";
+import { defaultTheme } from "../src/theme";
+import {
+  GlobalStyle,
+  NavBar,
+  PageHeaderWrapper,
+  PageHeader, 
+  PageHeaderContent,
+  ResponsiveContainer,
+  TagList,
+  Tag
+} from "./exports";
 
 const App: React.FC = () => {
-  return <></>;
-};
-
-/*
-    <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyle />
-        <Router>
-          <Root>
-            <Switch>
-              <Route path="/galleries">
-                <Galleries />
-              </Route>
-              <Route path="/gallery/:galleryid">
-                <Gallery />
-              </Route>
-              <Route path="/photo/:galleryid/:photoid">
-                <GalleryPhoto />
-              </Route>
-              <Route path="/blog">
-                <Blog />
-              </Route>
-              <Route path="/blogpost/:slug">
-                <BlogPost />
-              </Route>
-              <Route path="/youtube">
-                <Youtube />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </Root>
-        </Router>
+  return (<ThemeProvider theme={defaultTheme}>
+    <>
+      <GlobalStyle />
+      <PageHeaderWrapper
+        backgroundImage={
+          `/cdn/images/blog/creating-forced-perspective-in-your-photos-ts-header.jpg`
+        }
+      >
+        <PageHeader>
+          <NavBar>
+            <TagList>
+              <Tag>Blah</Tag>
+            </TagList>
+            <a href="/">Test</a>
+          </NavBar>
+        </PageHeader>
+        <ResponsiveContainer centreContainer={true}>
+          <PageHeaderContent>
+            <TagList>
+              <a href="/">Test</a>
+            </TagList>
+            <div style={{textShadow:'rgba(107, 107, 107, 0.4) 0px 0px 10px'}}>
+              <h1>Post title</h1>
+              <p>Excerpt</p>
+            </div>
+          </PageHeaderContent>
+        </ResponsiveContainer>
+      </PageHeaderWrapper>
       </>
-    </ThemeProvider>
-    */
+    </ThemeProvider>)
+;
+};
 
 export default App;

@@ -26,7 +26,7 @@ const baseFont = (props: any) => {
   return props.theme.units.forms.fontSize + fontOffset(props.size)
 }
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledButtonFunc = (comp:any) => styled(comp)<ButtonProps>`
   display:${props => props.block ? "block" : "inline-block"};
   border-radius: 6px;
   border: none;
@@ -47,6 +47,8 @@ const StyledButton = styled.button<ButtonProps>`
   padding-bottom: ${props => basePadding(props) + 0}px;
 
   &:hover {
+    color: ${props => props.theme.components.button.textColor};
+    text-decoration:none;
     background-color: ${props =>
       (props.theme.components.button.hover || props.theme.components.button)
         .backgroundColor};
@@ -61,6 +63,9 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
+const StyledButtonLink = StyledButtonFunc("a");
+const StyledButton = StyledButtonFunc("button");
+
 interface ButtonProps extends React.ButtonHTMLAttributes<any> {
   size?: 'small' | 'medium' | 'large',
   block?: boolean;
@@ -69,6 +74,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<any> {
 
 export const Button: React.FC<ButtonProps> = ({ size = 'medium', block = false, children, ...restProps }) => {
   return <StyledButton size={size} block={block} {...restProps}>{children}</StyledButton>;
+};
+
+export const ButtonLink: React.FC<ButtonProps> = ({ size = 'medium', block = false, children, ...restProps }) => {
+  return <StyledButtonLink size={size} block={block} {...restProps}>{children}</StyledButtonLink>;
 };
 
 interface ButtonGroupProps extends React.HTMLAttributes<any> {

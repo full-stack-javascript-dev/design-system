@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Button, ButtonGroup } from './Button'
+import { Button, ButtonLink, ButtonGroup } from './Button'
 import { Input } from './Input'
 import { FormWrapper, FormControl, FormLabel, FormElement } from "./FormData";
 
@@ -26,4 +26,8 @@ export const AllSizes = () => {
       </p>
     </div>
   )
+}
+
+export const Link = () => {
+  return (<ButtonLink>Test</ButtonLink>)
 }

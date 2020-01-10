@@ -11,6 +11,6 @@ export declare const NavBarMenuItem: React.FC<React.HTMLAttributes<HTMLElement>>
 /** Allows wrapping of NavBarMenuItem. This should be declared in your module with a const
  * OUTSIDE of your component before use in render/JSX
  */
-export declare const NavBarMenuItemComponent: (component: React.ReactNode) => React.FunctionComponent<any>;
+export declare const NavBarMenuItemComponent: (component: React.ReactNode) => React.FC<any>;
 export {};
 //# sourceMappingURL=NavBar.d.ts.map

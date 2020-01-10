@@ -1,5 +1,5 @@
 import { NavBar, NavBarLogo, NavBarMenu, NavBarMenuItem, NavBarMenuItemComponent } from "./components/NavBar/NavBar";
-import { Button } from "./components/Button";
+import { Button, ButtonLink } from "./components/Button";
 import { ButtonRound } from "./components/ButtonRound";
 import { ButtonText } from "./components/ButtonText";
 import { CanvasBlur } from "./components/CanvasBlur";
@@ -18,7 +18,7 @@ import { ModalDialog } from "./components/ModalDialog";
 import { PageInfoBar, PageInfoBarContent } from "./components/PageInfoBar";
 import { Root } from "./components/Root";
 import { Table } from "./components/Table";
-import { TagList, TagComponent } from "./components/TagList";
+import { TagList, Tag, TagComponent } from "./components/TagList";
 import { Text } from "./components/Text";
 import { ToggleButton } from "./components/ToggleButton";
 import { PageFooter, PageFooterIcon } from "./components-layout/PageFooter/PageFooter";
@@ -27,5 +27,5 @@ import { PageHeaderWrapper } from "./components-layout/PageHeader/PageHeaderWrap
 import { LayoutContentColumn, LayoutContentColumns } from "./components-layout/LayoutContentColumns";
 import { ResponsiveContainer } from "./components-layout/ResponsiveContainer";
 import { defaultTheme } from "./theme";
-export { NavBar, NavBarLogo, NavBarMenu, NavBarMenuItem, NavBarMenuItemComponent, Button, ButtonRound, ButtonText, CanvasBlur, CarouselPromo, CheckBox, Content, ContentList, ContentListItem, ControlledTransitionAnimation, ControlledKeyframeAnimation, DropDownMenu, FormControl, FormInline, FormLabel, FormElement, GlobalStyle, H1, H2, H3, H4, ImgResponsive, Input, ModalDialog, PageInfoBar, PageInfoBarContent, Root, Table, TagList, TagComponent, Text, ToggleButton, PageFooter, PageFooterIcon, PageHeader, PageHeaderWrapper, PageHeaderContent, LayoutContentColumn, LayoutContentColumns, ResponsiveContainer, defaultTheme };
+export { NavBar, NavBarLogo, NavBarMenu, NavBarMenuItem, NavBarMenuItemComponent, Button, ButtonRound, ButtonText, ButtonLink, CanvasBlur, CarouselPromo, CheckBox, Content, ContentList, ContentListItem, ControlledTransitionAnimation, ControlledKeyframeAnimation, DropDownMenu, FormControl, FormInline, FormLabel, FormElement, GlobalStyle, H1, H2, H3, H4, ImgResponsive, Input, ModalDialog, PageInfoBar, PageInfoBarContent, Root, Table, TagList, Tag, TagComponent, Text, ToggleButton, PageFooter, PageFooterIcon, PageHeader, PageHeaderWrapper, PageHeaderContent, LayoutContentColumn, LayoutContentColumns, ResponsiveContainer, defaultTheme };
 //# sourceMappingURL=exports.d.ts.map

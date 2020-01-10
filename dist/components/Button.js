@@ -28,7 +28,7 @@ const baseFont = props => {
   return props.theme.units.forms.fontSize + fontOffset(props.size);
 };
 
-const StyledButton = styled.button`
+const StyledButtonFunc = comp => styled(comp)`
   display:${props => props.block ? "block" : "inline-block"};
   border-radius: 6px;
   border: none;
@@ -49,6 +49,8 @@ const StyledButton = styled.button`
   padding-bottom: ${props => basePadding(props) + 0}px;
 
   &:hover {
+    color: ${props => props.theme.components.button.textColor};
+    text-decoration:none;
     background-color: ${props => (props.theme.components.button.hover || props.theme.components.button).backgroundColor};
   }
 
@@ -60,6 +62,9 @@ const StyledButton = styled.button`
     background-color: ${props => props.theme.colors.primaryActive};
   }
 `;
+
+const StyledButtonLink = StyledButtonFunc("a");
+const StyledButton = StyledButtonFunc("button");
 export const Button = ({
   size = 'medium',
   block = false,
@@ -67,6 +72,17 @@ export const Button = ({
   ...restProps
 }) => {
   return React.createElement(StyledButton, _extends({
+    size: size,
+    block: block
+  }, restProps), children);
+};
+export const ButtonLink = ({
+  size = 'medium',
+  block = false,
+  children,
+  ...restProps
+}) => {
+  return React.createElement(StyledButtonLink, _extends({
     size: size,
     block: block
   }, restProps), children);
