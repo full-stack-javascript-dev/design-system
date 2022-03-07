@@ -37,7 +37,7 @@
     "@types/jest": "26.0.22",
     "@types/node": "12.20.10",
     "@types/react": "17.0.3",
-    "@types/react-dom": "17.0.3",
+    "@types/react-dom": "17.0.13",
     "@types/react-router-dom": "^5.1.2",
     "@types/styled-components": "5.1.9",
     "polished": "^4.0.0",
